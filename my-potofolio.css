@@ -1,0 +1,164 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.ndiv {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    width: 100%;
+    background-color: green;
+    animation: fadein 1s ease-out forwards;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+        /* Optional: adds a subtle slide-up effect */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hh {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 5px;
+    box-shadow: 0 0 20px black;
+    border: 1px solid black;
+    background-image: url(./junior.png);
+    background-size: cover;
+    background-position: top right;
+}
+
+.hd {
+    border: 1px solid black;
+    height: 700px;
+    animation: hh 1s ease-in-out forwards;
+}
+
+@keyframes hh {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+        /* Optional: adds a subtle slide-up effect */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(1);
+    }
+}
+
+.io {
+    width: 100px;
+    height: 100px;
+}
+
+.gh {
+    padding-top: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.iop {
+    background-color: transparent;
+    border: 2px solid black;
+    height: 300px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.img1 {
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+}
+
+.oli {
+    color: white;
+}
+
+@media(max-width:440px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    body {
+        background-color: green;
+    }
+
+    .nav1 {
+        display: flex;
+        flex-direction: row;
+        width: 100;
+    }
+
+    .ndiv {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 100%;
+        background-color: green;
+        animation: fadein 1s ease-out forwards;
+    }
+
+    .hh {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 5px;
+        box-shadow: 0 0 20px black;
+        border: 1px solid black;
+        background-image: url(./junior.png);
+        background-size: cover;
+        background-position: top;
+    }
+
+    .hd {
+        border: 1px solid black;
+        height: ;
+        animation: hh 1s ease-in-out forwards;
+    }
+
+    .gh {
+        padding-top: 200px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .iop {
+        background-color: transparent;
+        border: 2px solid black;
+        height: 100px;
+        border-radius: 20px;
+    }
+
+    .img1 {
+        width: 100%;
+        height: 60%;
+        border-radius: 20px;
+    }
+
+    .oli {
+        color: white;
+    }
+
+}
